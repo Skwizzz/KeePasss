@@ -9,7 +9,7 @@ if mode == "w":
         passw = input("What is your password ? : ")
         print(" Please verify that your password is",passw,"(yes/no)" )
         verif = input()
-    passwencoded = cryptocode.encrypt(passw,"KeePassKey25152021")
+    passwencoded = cryptocode.encrypt(passw,"Key") # This is the Key used to encrypt and decrypt, if you are using this application for a personal use you should change this. This is your "main password".
     file = open(name,"w")
     file.write(passwencoded)
     file.close()
@@ -20,7 +20,7 @@ if mode == "r":
     with open(name,"r+")as f:
         print("Your password is")
         passw = f.read()
-        passwdecoded = cryptocode.decrypt(passw,"KeePassKey25152021")
+        passwdecoded = cryptocode.decrypt(passw,"Key")
         
         print(passwdecoded)
 
