@@ -30,7 +30,8 @@ Voila !
 
 
 
-
+EDIT : Now you need to set your own key via the UI to save a password and to decrypt that password. This is the master password and its way safer.
+      This update also add 2 buttons to hide or see the password and one button that redirects to an help server for the users that need assistances.
 
 
  
